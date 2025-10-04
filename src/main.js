@@ -10,6 +10,10 @@ function setIconInitialClass() {
   const theme = getInitialTheme();
   if (theme === DARK_THEME) {
     moonIcon.classList.add("hidden");
+    sunIcon.classList.remove("hidden");
+  } else {
+    moonIcon.classList.remove("hidden");
+    sunIcon.classList.add("hidden");
   }
 }
 
