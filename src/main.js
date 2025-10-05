@@ -5,6 +5,8 @@ import Typed from "typed.js";
 const toggleIcon = document.querySelector(".toggle-icon");
 const moonIcon = document.querySelector(".moon-icon");
 const sunIcon = document.querySelector(".sun-icon");
+const toggleMenu = document.querySelector(".toggle-menu");
+const offScreenMenu = document.querySelector(".off-screen-menu");
 
 function setIconInitialClass() {
   const theme = getInitialTheme();
@@ -38,4 +40,8 @@ toggleIcon.addEventListener("click", function (e) {
     sunIcon.classList.remove("hidden");
     moonIcon.classList.add("hidden");
   }
+});
+
+toggleMenu.addEventListener("click", () => {
+  offScreenMenu.classList.toggle("hidden");
 });
